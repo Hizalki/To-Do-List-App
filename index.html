@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Welcome, <span id="user-name">Hizalki</span></h1>
+      <p class="role">Blockchain Developer</p>
+      <p class="date" id="current-date"></p>
+    </header>
+
+    <section class="task-input">
+      <textarea id="task-input" placeholder="Write a new task..."></textarea>
+      <select id="priority">
+        <option value="low">Low 🔵</option>
+        <option value="medium">Medium 🟠</option>
+        <option value="high">High 🔴</option>
+      </select>
+      <input type="date" id="task-date">
+      <button id="add-task">Add</button>
+    </section>
+
+    <section class="filter">
+      <label>Filter by date:</label>
+      <input type="date" id="filter-date" />
+    </section>
+
+    <section class="task-lists">
+      <div class="todo-list">
+        <h2>To Do</h2>
+        <ul id="todo-tasks"></ul>
+      </div>
+      <div class="done-list">
+        <h2>Done</h2>
+        <ul id="done-tasks"></ul>
+      </div>
+    </section>
+
+    <div class="delete-all">
+      <button id="delete-all">Delete All</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
